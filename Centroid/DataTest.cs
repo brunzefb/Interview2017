@@ -4,9 +4,15 @@ using NUnit.Framework;
 
 namespace Centroid
 {
+    /// <summary>
+    /// Class DataTest.
+    /// </summary>
     [TestFixture]
     public class DataTest
     {
+        /// <summary>
+        /// Cardinalities this instance.
+        /// </summary>
         [Test]
         public void Cardinality()
         {

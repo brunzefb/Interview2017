@@ -4,8 +4,14 @@ namespace Centroid
 {
     public static class Data
     {
+        /// <summary>
+        /// The centroid y
+        /// </summary>
         public static int[] CentroidY = {2, 1, 3, 1, 5, 3, 5, 10, 16, 18, 8, 7, 2};
 
+        /// <summary>
+        /// The x values
+        /// </summary>
         public static double[] XValues =
         {
             100.030679558, 100.071446036, 100.072851924, 100.074257823, 100.075663732, 100.07706965, 100.078475578,
@@ -2715,6 +2721,9 @@ namespace Centroid
             998.39484515, 998.667963147, 998.887816957, 999.534194011
         };
 
+        /// <summary>
+        /// The y values
+        /// </summary>
         public static double[] YValues =
         {
             20, 27.3333, 32.6667, 123.6667,
