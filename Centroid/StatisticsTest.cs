@@ -17,7 +17,7 @@ namespace Centroid
         private readonly Statistics _stats = new Statistics();
 
         /// <summary>
-        /// Finds the highest y value.
+        /// Find the highest y value.
         /// </summary>
         [Test]
         public void FindHighestYValue()
@@ -26,7 +26,7 @@ namespace Centroid
         }
 
         /// <summary>
-        /// Finds the second highest y value.
+        /// Find the second highest y value.
         /// </summary>
         [Test]
         public void FindSecondHighestYValue()
@@ -35,7 +35,7 @@ namespace Centroid
         }
 
         /// <summary>
-        /// Finds the lowest x value.
+        /// Find the lowest x value.
         /// </summary>
         [Test]
         public void FindLowestXValue()
@@ -44,7 +44,7 @@ namespace Centroid
         }
 
         /// <summary>
-        /// Finds the centroid value.
+        /// Find the centroid value.
         /// </summary>
         [Test]
         public void FindCentroidValue()
@@ -58,7 +58,7 @@ namespace Centroid
         public void WhenYDataIsNull_ThenReturnZero()
         {
             Data.YValues = null;
-            Assert.That(Math.Round(_stats.FindHighestYValue(), 0), Is.EqualTo(0));
+            Assert.That(_stats.FindHighestYValue(), Is.EqualTo(0));
         }
         /// <summary>
         /// Whens the x data is null then return zero.
@@ -67,7 +67,7 @@ namespace Centroid
         public void WhenXDataIsNull_ThenReturnZero()
         {
             Data.XValues = null;
-            Assert.That(Math.Round(_stats.FindLowestXValue(), 0), Is.EqualTo(0));
+            Assert.That(_stats.FindLowestXValue(), Is.EqualTo(0));
         }
         /// <summary>
         /// Whens the centroid data is null then return zero.
@@ -76,7 +76,7 @@ namespace Centroid
         public void WhenCentroidDataIsNull_ThenReturnZero()
         {
             Data.CentroidY = null;
-            Assert.That(Math.Round(_stats.FindCentroid(), 0), Is.EqualTo(0));
+            Assert.That(_stats.FindCentroid(), Is.EqualTo(0));
         }
     }
 }
